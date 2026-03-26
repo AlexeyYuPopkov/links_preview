@@ -1,0 +1,24 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Rust (main)",
+            "program": "${workspaceFolder}/target/debug/links_preview",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "cargo": {
+                "args": [
+                    "build"
+                ]
+            },
+            "preLaunchTask": "cargo build"
+        }
+    ]
+}
